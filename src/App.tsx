@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import History from "./components/History/History";
+import {mockData} from "./data/dataHistory";
 
-function App() {
+
+export const App = () => {
   return (
     <div className="App">
-
+      <History historyData={mockData} />
     </div>
   );
 }
-
-export default App;
