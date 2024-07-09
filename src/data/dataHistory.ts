@@ -1,89 +1,182 @@
-type dateInfo = {
-    title: string
-    description: string
-}
-export type mockDataType = {
-    firstYear: string;
-    lastYear: string;
-    facts: dateInfo[];
-    pagination?: string;
-};
+import {DataType} from "../components/History";
 
-export const mockData: mockDataType[] = [
+export const testData: DataType[] = [
     {
-        firstYear: "1676",
-        lastYear: "1687",
-        facts: [
+        startDate: "1957",
+        LastDate: "1970",
+        history: [
             {
-                title: "1676",
-                description: "Оле Рёмер впервые измерил скорость света, наблюдая за затмениями спутников Юпитера.",
+                year: "1957",
+                description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
             {
-                title: "1682",
-                description: "Эдмонд Галлей предсказал возвращение кометы, которая теперь носит его имя — комета Галлея.",
+                year: "1959",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
             {
-                title: "1687",
-                description: "Исаак Ньютон опубликовал свой труд «Математические начала натуральной философии», заложивший основы классической механики.",
+                year: "1961",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "1966",
+                description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "1970",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
         ],
-        pagination: "Наука 17 века",
+        paginationText: "1 slide",
     },
     {
-        firstYear: "1865",
-        lastYear: "1879",
-        facts: [
+        startDate: "2010",
+        LastDate: "2016",
+        history: [
             {
-                title: "1865",
-                description: "Грегор Мендель опубликовал свои работы по генетике, заложив основы науки о наследственности.",
+                year: "2010",
+                description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
             {
-                title: "1876",
-                description: "Александр Белл получил патент на изобретение телефона.",
+                year: "2012",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
             {
-                title: "1879",
-                description: "Томас Эдисон изобрёл практическую электрическую лампу накаливания.",
+                year: "2015",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "2016",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
         ],
-        pagination: "Наука 19 века",
+        paginationText: "2 slide",
     },
     {
-        firstYear: "1928",
-        lastYear: "1953",
-        facts: [
+        startDate: "1618",
+        LastDate: "1991",
+        history: [
             {
-                title: "1928",
-                description: "Александр Флеминг открыл первый антибиотик — пенициллин.",
+                year: "1618",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
             {
-                title: "1947",
-                description: "Чак Йегер первым преодолел звуковой барьер на экспериментальном самолёте Bell X-1.",
+                year: "1929",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
             {
-                title: "1953",
-                description: "Джеймс Уотсон и Фрэнсис Крик открыли структуру ДНК.",
+                year: "1931",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "1932",
+                description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "1961 ",
+                description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "1989 ",
+                description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
         ],
-        pagination: "Наука середины 20 века",
+        paginationText: "3 slide",
     },
     {
-        firstYear: "1997",
-        lastYear: "2003",
-        facts: [
+        startDate: "1950",
+        LastDate: "1820",
+        history: [
             {
-                title: "1997",
-                description: "Успешное клонирование овцы Долли учёными из Шотландии.",
+                year: "1950",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
             {
-                title: "1998",
-                description: "Запуск Международной космической станции (МКС) как совместного проекта 16 стран.",
+                year: "1962",
+                description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
             {
-                title: "2003",
-                description: "Успешное завершение проекта «Геном человека», расшифровавшего всю последовательность человеческой ДНК.",
+                year: "1978",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "1981",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
             },
         ],
-        pagination: "Современная наука",
+        paginationText: "3 slide",
+    },
+    {
+        startDate: "1995",
+        LastDate: "2015",
+        history: [
+            {
+                year: "1995",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "1996",
+                description: "Старт работ по стандартизации JavaScript по стандартам ECMA",
+            },
+            {
+                year: "1999",
+                description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "2008",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "2015",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+        ],
+        paginationText: "4 slide",
+    },
+    {
+        startDate: "2015",
+        LastDate: "2022",
+        history: [
+            {
+                year: "2015",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "2016",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "2017",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "2018",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+            {
+                year: "2018",
+                description:
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            },
+        ],
+        paginationText: "5 slide",
     },
 ]

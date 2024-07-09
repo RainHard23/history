@@ -1,13 +1,15 @@
 import React from 'react';
-import './App.css';
-import History from "./components/History/History";
-import {mockData} from "./data/dataHistory";
-
+import './styles/_bolirplate.css';
+import "swiper/css"
+import "swiper/css/navigation"
+import "./index.css"
+import {History} from "./components/History";
+import {testData} from "./data/dataHistory";
 
 export const App = () => {
   return (
     <div className="App">
-      <History historyData={mockData} />
+      <History data={testData} />
     </div>
   );
 }
